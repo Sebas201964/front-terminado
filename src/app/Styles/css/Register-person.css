@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@3030;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.campo {
+  margin-top: 2%;
+}
+
+#float-input {
+  position: relative;
+  border-radius: 10px;
+  color: #23242a;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+}
+
+.inputBox input {
+  position: relative;
+  border-radius: 10px;
+  color: #23242a;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+}
+
+.register {
+  width: 50px;
+  height: 50%;
+  background-color: antiquewhite;
+}
+
+.box {
+  width: 60%;
+  height: 70%;
+  background: #1c1c1c;
+  position: absolute;
+  border-radius: 8px;
+  overflow: hidden;
+  top: 15%;
+  right: 20%;
+  background-color: #ffffff;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.formP {
+  position: relative;
+  inset: 2px;
+  border-radius: 8px;
+  background: #ffffff;
+  z-index: 10;
+  padding: 21px 40px;
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  flex-direction: column;
+  overflow-x: none;
+  overflow-y: scroll;
+}
+
+.formU {
+  position: relative;
+  inset: 2px;
+  border-radius: 8px;
+  background: #ffffff;
+  z-index: 10;
+  padding: 37px 40px;
+  display: flex;
+  margin-bottom: 175px;
+  margin-top: 50px;
+  flex-direction: column;
+  overflow-x: none;
+  overflow-y: scroll;
+}
+
+.form::-webkit-scrollbar {
+  display: none;
+}
